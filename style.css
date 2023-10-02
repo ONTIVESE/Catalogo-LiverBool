@@ -1,0 +1,212 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Nunito", sans-serif;
+    font-family: "Nunito Sans", sans-serif;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    margin: auto;
+    /* width: 80%; */
+    min-height: 100%;
+    background-color: #ffffff;
+}
+
+.grid-container > * {
+    padding: 10px;
+    /* box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.75); */
+    text-align: center;
+    /* border-radius: 3px; */
+}
+
+.header {
+    grid-area: header;
+    background-color: #000000;
+}
+.navbar {
+    grid-area: navbar;
+    background-color: #ffffff;
+}
+.main {
+    grid-area: main;
+    background-color: #ffffff;
+}
+.sidebar {
+    grid-area: sidebar;
+    background-color: #ffffff;
+}
+.footer {
+    grid-area: footer;
+    background-color: #000000;
+}
+
+.grid-container {
+    display: grid;
+    gap: 5px;
+    grid-template:
+        "header" 100px
+        "navbar" 100px
+        "main" auto
+        "sidebar" 100px
+        "footer" 100px;
+}
+
+@media (min-width: 600px) {
+    .grid-container {
+        /* grid-template-columns: 200px auto;
+        grid-template-rows: 100px 50px auto 100px; 
+        grid-template-areas: 
+        "header header"
+        "navbar navbar"
+        "sidebar main"
+        "footer footer"; */
+
+        grid-template:
+            "header header" 100px
+            "navbar navbar" 50px
+            "sidebar main" auto
+            "footer footer" 100px /
+            200px auto;
+    }
+}
+
+@media (min-width: 900px) {
+    .grid-container {
+        grid-template:
+            "header header header header header" 80px
+            ". navbar main main sidebar" auto
+            "footer footer footer footer footer" 200px /
+            50px 200px 65% auto;
+    }
+    .navbar {
+        padding-top: 25px;
+        padding-bottom: 25px;
+        border-right: 2px solid rgba(0, 0, 0, 0.145);
+    }
+    .navbar button {
+        margin-bottom: 10px;
+        display: block;
+        width: 100%;
+        height: 50px;
+        border: none;
+        background-color: #ffffff;
+    }
+
+    .main {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 10px;
+    }
+
+    .target {
+        background-color: #ffffff;
+        width: 100%;
+        height: 400px;
+        overflow: hidden;
+        /* overflow:hidden;hace que la imagen no se salga del div */
+        display: block;
+    }
+
+    .img {
+        height: 45%;
+        background-color: #ffffff;
+        margin: 10px;
+    }
+
+    .img img {
+        width: 50%;
+        height: 100%;
+    }
+
+    .caracteristicas {
+        height: 45%;
+        background-color: #ffffff;
+        margin: 10px;
+        font-size: 13px;
+    }
+    .navbar :hover {
+        background-color: #11110f;
+        color: #ffffff;
+        cursor: pointer;
+        border-radius: 10px;
+    }
+    h3 {
+        background-color: #00246d;
+        color: #ffffff;
+
+        padding: 5px;
+        border-radius: 8px;
+        text-align: center;
+        display: inline-block;
+    }
+
+    .precio {
+        font-size: 25px;
+        color: #fa0303;
+    }
+
+    .category {
+        background-color: #ffffff !important;
+        color: #080808 !important;
+        cursor: context-menu !important;
+    }
+
+    .header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 15px;
+    }
+
+    .header .logo img {
+        width: 300px;
+        height: 100px;
+        margin: 0px;
+    }
+
+    .search input {
+        background-color: #ffffff;
+        width: 800px;
+        height: 40px;
+        border-radius: 5px;
+        padding: 15px;
+        border: none;
+        outline: none; /*Quita el borde del input search cuando este está seleccionado*/
+    }
+
+    .link a {
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 25px;
+        padding: 15px;
+    }
+
+    .link a:hover {
+        color: burlywood;
+    }
+
+    .sidebar {
+        border-left: 2px solid rgba(0, 0, 0, 0.145);
+    }
+    .sidebar .promociones {
+        width: 80%;
+    }
+    .sidebar p {
+        font-size: 25px;
+    }
+
+    .filter {
+        display: none;
+    }
+
+    .selection{
+        background-color: #11110f;
+        color: #ffffff;
+    }
+
+}
