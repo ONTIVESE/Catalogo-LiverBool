@@ -3,9 +3,9 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <style>
-            @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&family=Nunito:wght@200&display=swap");
-        </style>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&family=Nunito:wght@200&family=Poppins:wght@300&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="style.css" />
         <script src="main.js" defer></script>
         <title>LiverBool</title>
@@ -17,7 +17,7 @@
                 <img src="img/logopool1.png" alt="">
             </div>
             <div class="search">
-                <input type="search" placeholder="Buscar...">
+                <input class="buscar" type="search" placeholder="Buscar..." onclick="buscar()">
             </div>
             <div class="link">
                 <a href="">Inicio</a>
@@ -29,13 +29,6 @@
         <nav class="navbar">
             <h4 class="category">Categorías</h4>
 
-            <!-- <ul>
-                <li><a href="">Todos</a></li>
-                <li><a href="">Pc Escritorio</a></li>
-                <li><a href="">Pc Portatil</a></li>
-                <li><a href="">Monitor</a></li>
-                <li><a href="">Teclado</a></li>
-                </ul> -->
             <br>
             <hr>
             <br>
@@ -76,7 +69,7 @@
                     <p>Marca: <b>HUAWEI</b></p>
                     <br /><br />
                     <p class="precio"><b>Precio $3500</b></p><br>
-                    <h3>PC de Escritorio</h3>
+                    <h3 class="producto" class="producto">PC de Escritorio</h3 class="producto">
                 </div>
             </div>
 
@@ -94,7 +87,7 @@
                         <p>Marca: <b>HUAWEI</b></p>
                         <br /><br />
                         <p class="precio"><b>Precio $3500</b></p><br>
-                        <h3>PC de Escritorio</h3>
+                        <h3 class="producto">PC de Escritorio</h3 class="producto">
                     </div>
                 </div>
             </div>
@@ -112,7 +105,7 @@
                     <p>Marca: <b>HUAWEI</b></p>
                     <br /><br />
                     <p class="precio"><b>Precio $3500</b></p><br>
-                    <h3>PC de Escritorio</h3>
+                    <h3 class="producto">PC de Escritorio</h3 class="producto">
                 </div>
             </div>
 
@@ -129,7 +122,7 @@
                     <p>Marca: <b>HUAWEI</b></p>
                     <br /><br />
                     <p class="precio"><b>Precio $3500</b></p><br>
-                    <h3>PC de Escritorio</h3>
+                    <h3 class="producto">PC de Escritorio</h3 class="producto">
                 </div>
             </div>
 
@@ -146,7 +139,7 @@
                     <p>Marca: <b>HUAWEI</b></p>
                     <br /><br />
                     <p class="precio"><b>Precio $3500</b></p><br>
-                    <h3>PC de Escritorio</h3>
+                    <h3 class="producto">PC de Escritorio</h3 class="producto">
                 </div>
             </div>
 
@@ -163,7 +156,7 @@
                     <p>Marca: <b>HUAWEI</b></p>
                     <br /><br />
                     <p class="precio"><b>Precio $3500</b></p><br>
-                    <h3>PC de Escritorio</h3>
+                    <h3 class="producto">PC de Escritorio</h3 class="producto">
                 </div>
             </div>
             <!----------------------------------------------------------------------------------------------------- -->
@@ -182,7 +175,7 @@
                     <p>Marca: <b>HUAWEI</b></p>
                     <br /><br />
                     <p class="precio"><b>Precio $3500</b></p><br>
-                    <h3>PC Portatil</h3>
+                    <h3 class="producto">PC Portatil</h3 class="producto">
                 </div>
             </div>
 
@@ -199,7 +192,7 @@
                     <p>Marca: <b>HUAWEI</b></p>
                     <br /><br />
                     <p class="precio"><b>Precio $3500</b></p><br>
-                    <h3>PC Portatil</h3>
+                    <h3 class="producto">PC Portatil</h3 class="producto">
                 </div>
             </div>
 
@@ -216,7 +209,7 @@
                     <p>Marca: <b>HUAWEI</b></p>
                     <br /><br />
                     <p class="precio"><b>Precio $3500</b></p><br>
-                    <h3>PC Portatil</h3>
+                    <h3 class="producto">PC Portatil</h3 class="producto">
                 </div>
             </div>
 
@@ -233,7 +226,7 @@
                     <p>Marca: <b>HUAWEI</b></p>
                     <br /><br />
                     <p class="precio"><b>Precio $3500</b></p><br>
-                    <h3>PC Portatil</h3>
+                    <h3 class="producto">PC Portatil</h3 class="producto">
                 </div>
             </div>
 
@@ -250,7 +243,7 @@
                     <p>Marca: <b>HUAWEI</b></p>
                     <br /><br />
                     <p class="precio"><b>Precio $3500</b></p><br>
-                    <h3>PC Portatil</h3>
+                    <h3 class="producto">PC Portatil</h3 class="producto">
                 </div>
             </div>
 
@@ -267,7 +260,7 @@
                     <p>Marca: <b>HUAWEI</b></p>
                     <br /><br />
                     <p class="precio"><b>Precio $3500</b></p><br>
-                    <h3>PC Portatil</h3>
+                    <h3 class="producto">PC Portatil</h3 class="producto">
                 </div>
             </div>
             <!----------------------------------------------------------------------------------------------------- -->
@@ -285,7 +278,7 @@
                     <p>Marca: <b>HUAWEI</b></p>
                     <br /><br />
                     <p class="precio"><b>Precio $3500</b></p><br>
-                    <h3>Monitor</h3>
+                    <h3 class="producto">Monitor</h3 class="producto">
                 </div>
             </div>
 
@@ -302,7 +295,7 @@
                     <p>Marca: <b>HUAWEI</b></p>
                     <br /><br />
                     <p class="precio"><b>Precio $3500</b></p><br>
-                    <h3>Monitor</h3>
+                    <h3 class="producto">Monitor</h3 class="producto">
                 </div>
                 </div>
             </div>
@@ -320,7 +313,7 @@
                     <p>Marca: <b>HUAWEI</b></p>
                     <br /><br />
                     <p class="precio"><b>Precio $3500</b></p><br>
-                    <h3>Monitor</h3>
+                    <h3 class="producto">Monitor</h3 class="producto">
                 </div>
                 </div>
             </div>
@@ -338,7 +331,7 @@
                     <p>Marca: <b>HUAWEI</b></p>
                     <br /><br />
                     <p class="precio"><b>Precio $3500</b></p><br>
-                    <h3>Monitor</h3>
+                    <h3 class="producto">Monitor</h3 class="producto">
                 </div>
                 </div>
             </div>
@@ -356,7 +349,7 @@
                     <p>Marca: <b>HUAWEI</b></p>
                     <br /><br />
                     <p class="precio"><b>Precio $3500</b></p><br>
-                    <h3>Monitor</h3>
+                    <h3 class="producto">Monitor</h3 class="producto">
                 </div>
                 </div>
             </div>
@@ -374,7 +367,7 @@
                     <p>Marca: <b>HUAWEI</b></p>
                     <br /><br />
                     <p class="precio"><b>Precio $3500</b></p><br>
-                    <h3>Monitor</h3>
+                    <h3 class="producto">Monitor</h3 class="producto">
                 </div>
                 </div>
             </div>
@@ -394,7 +387,7 @@
                     <p>Marca: <b>HUAWEI</b></p>
                     <br /><br />
                     <p class="precio"><b>Precio $3500</b></p><br>
-                    <h3>Teclado</h3>
+                    <h3 class="producto">Teclado</h3 class="producto">
                 </div>
                 </div>
             </div>
@@ -412,7 +405,7 @@
                     <p>Marca: <b>HUAWEI</b></p>
                     <br /><br />
                     <p class="precio"><b>Precio $3500</b></p><br>
-                    <h3>Teclado</h3>
+                    <h3 class="producto">Teclado</h3 class="producto">
                 </div>
                 </div>
             </div>
@@ -430,7 +423,7 @@
                     <p>Marca: <b>HUAWEI</b></p>
                     <br /><br />
                     <p class="precio"><b>Precio $3500</b></p><br>
-                    <h3>Teclado</h3>
+                    <h3 class="producto">Teclado</h3 class="producto">
                 </div>
                 </div>
             </div>
@@ -448,7 +441,7 @@
                     <p>Marca: <b>HUAWEI</b></p>
                     <br /><br />
                     <p class="precio"><b>Precio $3500</b></p><br>
-                    <h3>Teclado</h3>
+                    <h3 class="producto">Teclado</h3 class="producto">
                 </div>
                 </div>
             </div>
@@ -466,7 +459,7 @@
                     <p>Marca: <b>HUAWEI</b></p>
                     <br /><br />
                     <p class="precio"><b>Precio $3500</b></p><br>
-                    <h3>Teclado</h3>
+                    <h3 class="producto">Teclado</h3 class="producto">
                 </div>
                 </div>
             </div>
@@ -484,7 +477,7 @@
                     <p>Marca: <b>HUAWEI</b></p>
                     <br /><br />
                     <p class="precio"><b>Precio $3500</b></p><br>
-                    <h3>Teclado</h3>
+                    <h3 class="producto">Teclado</h3 class="producto">
                 </div>
                 </div>
             </div>
@@ -503,7 +496,7 @@
                     <p>Marca: <b>HUAWEI</b></p>
                     <br /><br />
                     <p class="precio"><b>Precio $3500</b></p><br>
-                    <h3>Mouse</h3>
+                    <h3 class="producto">Mouse</h3 class="producto">
                 </div>
                 </div>
             </div>
@@ -521,7 +514,7 @@
                     <p>Marca: <b>HUAWEI</b></p>
                     <br /><br />
                     <p class="precio"><b>Precio $3500</b></p><br>
-                    <h3>Mouse</h3>
+                    <h3 class="producto">Mouse</h3 class="producto">
                 </div>
                 </div>
             </div>
@@ -539,7 +532,7 @@
                     <p>Marca: <b>HUAWEI</b></p>
                     <br /><br />
                     <p class="precio"><b>Precio $3500</b></p><br>
-                    <h3>Mouse</h3>
+                    <h3 class="producto">Mouse</h3 class="producto">
                 </div>
                 </div>
             </div>
@@ -557,7 +550,7 @@
                     <p>Marca: <b>HUAWEI</b></p>
                     <br /><br />
                     <p class="precio"><b>Precio $3500</b></p><br>
-                    <h3>Mouse</h3>
+                    <h3 class="producto">Mouse</h3 class="producto">
                 </div>
                 </div>
             </div>
@@ -575,7 +568,7 @@
                     <p>Marca: <b>HUAWEI</b></p>
                     <br /><br />
                     <p class="precio"><b>Precio $3500</b></p><br>
-                    <h3>Mouse</h3>
+                    <h3 class="producto">Mouse</h3 class="producto">
                 </div>
                 </div>
             </div>
@@ -593,7 +586,7 @@
                     <p>Marca: <b>HUAWEI</b></p>
                     <br /><br />
                     <p class="precio"><b>Precio $3500</b></p><br>
-                    <h3>Mouse</h3>
+                    <h3 class="producto">Mouse</h3 class="producto">
                 </div>
                 </div>
             </div>
@@ -612,7 +605,7 @@
                     <p>Marca: <b>HUAWEI</b></p>
                     <br /><br />
                     <p class="precio"><b>Precio $3500</b></p><br>
-                    <h3>Cpu</h3>
+                    <h3 class="producto">Cpu</h3 class="producto">
                 </div>
                 </div>
             </div>
@@ -630,7 +623,7 @@
                     <p>Marca: <b>HUAWEI</b></p>
                     <br /><br />
                     <p class="precio"><b>Precio $3500</b></p><br>
-                    <h3>Cpu</h3>
+                    <h3 class="producto">Cpu</h3 class="producto">
                 </div>
                 </div>
             </div>
@@ -648,7 +641,7 @@
                     <p>Marca: <b>HUAWEI</b></p>
                     <br /><br />
                     <p class="precio"><b>Precio $3500</b></p><br>
-                    <h3>Cpu</h3>
+                    <h3 class="producto">Cpu</h3 class="producto">
                 </div>
                 </div>
             </div>
@@ -666,7 +659,7 @@
                     <p>Marca: <b>HUAWEI</b></p>
                     <br /><br />
                     <p class="precio"><b>Precio $3500</b></p><br>
-                    <h3>Cpu</h3>
+                    <h3 class="producto">Cpu</h3 class="producto">
                 </div>
                 </div>
             </div>
@@ -684,7 +677,7 @@
                     <p>Marca: <b>HUAWEI</b></p>
                     <br /><br />
                     <p class="precio"><b>Precio $3500</b></p><br>
-                    <h3>Cpu</h3>
+                    <h3 class="producto">Cpu</h3 class="producto">
                 </div>
                 </div>
             </div>
@@ -702,7 +695,7 @@
                     <p>Marca: <b>HUAWEI</b></p>
                     <br /><br />
                     <p class="precio"><b>Precio $3500</b></p><br>
-                    <h3>Cpu</h3>
+                    <h3 class="producto">Cpu</h3 class="producto">
                 </div>
                 </div>
             </div>
@@ -721,7 +714,7 @@
                     <p>Marca: <b>HUAWEI</b></p>
                     <br /><br />
                     <p class="precio"><b>Precio $3500</b></p><br>
-                    <h3>Tarjeta Madre</h3>
+                    <h3 class="producto">Tarjeta Madre</h3 class="producto">
                 </div>
                 </div>
             </div>
@@ -739,7 +732,7 @@
                     <p>Marca: <b>HUAWEI</b></p>
                     <br /><br />
                     <p class="precio"><b>Precio $3500</b></p><br>
-                    <h3>Tarjeta Madre</h3>
+                    <h3 class="producto">Tarjeta Madre</h3 class="producto">
                 </div>
                 </div>
             </div>
@@ -757,7 +750,7 @@
                     <p>Marca: <b>HUAWEI</b></p>
                     <br /><br />
                     <p class="precio"><b>Precio $3500</b></p><br>
-                    <h3>Tarjeta Madre</h3>
+                    <h3 class="producto">Tarjeta Madre</h3 class="producto">
                 </div>
                 </div>
             </div>
@@ -775,7 +768,7 @@
                     <p>Marca: <b>HUAWEI</b></p>
                     <br /><br />
                     <p class="precio"><b>Precio $3500</b></p><br>
-                    <h3>Tarjeta Madre</h3>
+                    <h3 class="producto">Tarjeta Madre</h3 class="producto">
                 </div>
                 </div>
             </div>
@@ -793,7 +786,7 @@
                     <p>Marca: <b>HUAWEI</b></p>
                     <br /><br />
                     <p class="precio"><b>Precio $3500</b></p><br>
-                    <h3>Tarjeta Madre</h3>
+                    <h3 class="producto">Tarjeta Madre</h3 class="producto">
                 </div>
                 </div>
             </div>
@@ -811,7 +804,7 @@
                     <p>Marca: <b>HUAWEI</b></p>
                     <br /><br />
                     <p class="precio"><b>Precio $3500</b></p><br>
-                    <h3>Tarjeta Madre</h3>
+                    <h3 class="producto">Tarjeta Madre</h3 class="producto">
                 </div>
                 </div>
             </div>
@@ -830,7 +823,7 @@
                     <p>Marca: <b>HUAWEI</b></p>
                     <br /><br />
                     <p class="precio"><b>Precio $3500</b></p><br>
-                    <h3>Memroia Ram</h3>
+                    <h3 class="producto">Memroia Ram</h3 class="producto">
                 </div>
                 </div>
             </div>
@@ -848,7 +841,7 @@
                     <p>Marca: <b>HUAWEI</b></p>
                     <br /><br />
                     <p class="precio"><b>Precio $3500</b></p><br>
-                    <h3>Memroia Ram</h3>
+                    <h3 class="producto">Memroia Ram</h3 class="producto">
                 </div>
                 </div>
             </div>
@@ -866,7 +859,7 @@
                     <p>Marca: <b>HUAWEI</b></p>
                     <br /><br />
                     <p class="precio"><b>Precio $3500</b></p><br>
-                    <h3>Memroia Ram</h3>
+                    <h3 class="producto">Memroia Ram</h3 class="producto">
                 </div>
                 </div>
             </div>
@@ -884,7 +877,7 @@
                     <p>Marca: <b>HUAWEI</b></p>
                     <br /><br />
                     <p class="precio"><b>Precio $3500</b></p><br>
-                    <h3>Memroia Ram</h3>
+                    <h3 class="producto">Memroia Ram</h3 class="producto">
                 </div>
                 </div>
             </div>
@@ -902,7 +895,7 @@
                     <p>Marca: <b>HUAWEI</b></p>
                     <br /><br />
                     <p class="precio"><b>Precio $3500</b></p><br>
-                    <h3>Memroia Ram</h3>
+                    <h3 class="producto">Memroia Ram</h3 class="producto">
                 </div>
                 </div>
             </div>
@@ -920,7 +913,7 @@
                     <p>Marca: <b>HUAWEI</b></p>
                     <br /><br />
                     <p class="precio"><b>Precio $3500</b></p><br>
-                    <h3>Memroia Ram</h3>
+                    <h3 class="producto">Memroia Ram</h3 class="producto">
                 </div>
                 </div>
             </div>
@@ -940,7 +933,7 @@
                     <p>Marca: <b>HUAWEI</b></p>
                     <br /><br />
                     <p class="precio"><b>Precio $3500</b></p><br>
-                    <h3>Tarjeta de Video</h3>
+                    <h3 class="producto">Tarjeta de Video</h3 class="producto">
                 </div>
                 </div>
             </div>
@@ -958,7 +951,7 @@
                     <p>Marca: <b>HUAWEI</b></p>
                     <br /><br />
                     <p class="precio"><b>Precio $3500</b></p><br>
-                    <h3>Tarjeta de Video</h3>
+                    <h3 class="producto">Tarjeta de Video</h3 class="producto">
                 </div>
                 </div>
             </div>
@@ -976,7 +969,7 @@
                     <p>Marca: <b>HUAWEI</b></p>
                     <br /><br />
                     <p class="precio"><b>Precio $3500</b></p><br>
-                    <h3>Tarjeta de Video</h3>
+                    <h3 class="producto">Tarjeta de Video</h3 class="producto">
                 </div>
                 </div>
             </div>
@@ -994,7 +987,7 @@
                     <p>Marca: <b>HUAWEI</b></p>
                     <br /><br />
                     <p class="precio"><b>Precio $3500</b></p><br>
-                    <h3>Tarjeta de Video</h3>
+                    <h3 class="producto">Tarjeta de Video</h3 class="producto">
                 </div>
                 </div>
             </div>
@@ -1012,7 +1005,7 @@
                     <p>Marca: <b>HUAWEI</b></p>
                     <br /><br />
                     <p class="precio"><b>Precio $3500</b></p><br>
-                    <h3>Tarjeta de Video</h3>
+                    <h3 class="producto">Tarjeta de Video</h3 class="producto">
                 </div>
                 </div>
             </div>
@@ -1030,7 +1023,7 @@
                     <p>Marca: <b>HUAWEI</b></p>
                     <br /><br />
                     <p class="precio"><b>Precio $3500</b></p><br>
-                    <h3>Tarjeta de Video</h3>
+                    <h3 class="producto">Tarjeta de Video</h3 class="producto">
                 </div>
                 </div>
             </div>
@@ -1051,7 +1044,7 @@
                     <p>Marca: <b>HUAWEI</b></p>
                     <br /><br />
                     <p class="precio"><b>Precio $3500</b></p><br>
-                    <h3>Procesador</h3>
+                    <h3 class="producto">Procesador</h3 class="producto">
                 </div>
                 </div>
             </div>
@@ -1069,7 +1062,7 @@
                     <p>Marca: <b>HUAWEI</b></p>
                     <br /><br />
                     <p class="precio"><b>Precio $3500</b></p><br>
-                    <h3>Procesador</h3>
+                    <h3 class="producto">Procesador</h3 class="producto">
                 </div>
                 </div>
             </div>
@@ -1087,7 +1080,7 @@
                     <p>Marca: <b>HUAWEI</b></p>
                     <br /><br />
                     <p class="precio"><b>Precio $3500</b></p><br>
-                    <h3>Procesador</h3>
+                    <h3 class="producto">Procesador</h3 class="producto">
                 </div>
                 </div>
             </div>
@@ -1105,7 +1098,7 @@
                     <p>Marca: <b>HUAWEI</b></p>
                     <br /><br />
                     <p class="precio"><b>Precio $3500</b></p><br>
-                    <h3>Procesador</h3>
+                    <h3 class="producto">Procesador</h3 class="producto">
                 </div>
                 </div>
             </div>
@@ -1123,7 +1116,7 @@
                     <p>Marca: <b>HUAWEI</b></p>
                     <br /><br />
                     <p class="precio"><b>Precio $3500</b></p><br>
-                    <h3>Procesador</h3>
+                    <h3 class="producto">Procesador</h3 class="producto">
                 </div>
                 </div>
             </div>
@@ -1141,7 +1134,7 @@
                     <p>Marca: <b>HUAWEI</b></p>
                     <br /><br />
                     <p class="precio"><b>Precio $3500</b></p><br>
-                    <h3>Procesador</h3>
+                    <h3 class="producto">Procesador</h3 class="producto">
                 </div>
                 </div>
             </div>
@@ -1161,7 +1154,7 @@
                     <p>Marca: <b>HUAWEI</b></p>
                     <br /><br />
                     <p class="precio"><b>Precio $3500</b></p><br>
-                    <h3>Disco Duro Externo</h3>
+                    <h3 class="producto">Disco Duro Externo</h3 class="producto">
                 </div>
                 </div>
             </div>
@@ -1179,7 +1172,7 @@
                     <p>Marca: <b>HUAWEI</b></p>
                     <br /><br />
                     <p class="precio"><b>Precio $3500</b></p><br>
-                    <h3>Disco Duro Externo</h3>
+                    <h3 class="producto">Disco Duro Externo</h3 class="producto">
                 </div>
                 </div>
             </div>
@@ -1198,7 +1191,7 @@
                     <p>Marca: <b>HUAWEI</b></p>
                     <br /><br />
                     <p class="precio"><b>Precio $3500</b></p><br>
-                    <h3>Disco Duro Externo</h3>
+                    <h3 class="producto">Disco Duro Externo</h3 class="producto">
                 </div>
                 </div>
             </div>
@@ -1217,7 +1210,7 @@
                     <p>Marca: <b>HUAWEI</b></p>
                     <br /><br />
                     <p class="precio"><b>Precio $3500</b></p><br>
-                    <h3>Disco Duro Externo</h3>
+                    <h3 class="producto">Disco Duro Externo</h3 class="producto">
                 </div>
                 </div>
             </div>
@@ -1236,7 +1229,7 @@
                     <p>Marca: <b>HUAWEI</b></p>
                     <br /><br />
                     <p class="precio"><b>Precio $3500</b></p><br>
-                    <h3>Disco Duro Externo</h3>
+                    <h3 class="producto">Disco Duro Externo</h3 class="producto">
                 </div>
                 </div>
             </div>
@@ -1255,7 +1248,7 @@
                     <p>Marca: <b>HUAWEI</b></p>
                     <br /><br />
                     <p class="precio"><b>Precio $3500</b></p><br>
-                    <h3>Disco Duro Externo</h3>
+                    <h3 class="producto">Disco Duro Externo</h3 class="producto">
                 </div>
                 </div>
             </div>
@@ -1277,7 +1270,7 @@
                     <p>Marca: <b>HUAWEI</b></p>
                     <br /><br />
                     <p class="precio"><b>Precio $3500</b></p><br>
-                    <h3>Disco SSD</h3>
+                    <h3 class="producto">Disco SSD</h3 class="producto">
                 </div>
                 </div>
             </div>
@@ -1295,7 +1288,7 @@
                     <p>Marca: <b>HUAWEI</b></p>
                     <br /><br />
                     <p class="precio"><b>Precio $3500</b></p><br>
-                    <h3>Disco SSD</h3>
+                    <h3 class="producto">Disco SSD</h3 class="producto">
                 </div>
                 </div>
             </div>
@@ -1313,7 +1306,7 @@
                     <p>Marca: <b>HUAWEI</b></p>
                     <br /><br />
                     <p class="precio"><b>Precio $3500</b></p><br>
-                    <h3>Disco SSD</h3>
+                    <h3 class="producto">Disco SSD</h3 class="producto">
                 </div>
                 </div>
             </div>
@@ -1331,7 +1324,7 @@
                     <p>Marca: <b>HUAWEI</b></p>
                     <br /><br />
                     <p class="precio"><b>Precio $3500</b></p><br>
-                    <h3>Disco SSD</h3>
+                    <h3 class="producto">Disco SSD</h3 class="producto">
                 </div>
                 </div>
             </div>
@@ -1349,7 +1342,7 @@
                     <p>Marca: <b>HUAWEI</b></p>
                     <br /><br />
                     <p class="precio"><b>Precio $3500</b></p><br>
-                    <h3>Disco SSD</h3>
+                    <h3 class="producto">Disco SSD</h3 class="producto">
                 </div>
                 </div>
             </div>
@@ -1367,7 +1360,7 @@
                     <p>Marca: <b>HUAWEI</b></p>
                     <br /><br />
                     <p class="precio"><b>Precio $3500</b></p><br>
-                    <h3>Disco SSD</h3>
+                    <h3 class="producto">Disco SSD</h3 class="producto">
                 </div>
                 </div>
             </div>
@@ -1388,7 +1381,7 @@
                     <p>Marca: <b>HUAWEI</b></p>
                     <br /><br />
                     <p class="precio"><b>Precio $3500</b></p><br>
-                    <h3>Camara Web</h3>
+                    <h3 class="producto">Camara Web</h3 class="producto">
                 </div>
                 </div>
             </div>
@@ -1406,7 +1399,7 @@
                     <p>Marca: <b>HUAWEI</b></p>
                     <br /><br />
                     <p class="precio"><b>Precio $3500</b></p><br>
-                    <h3>Camara Web</h3>
+                    <h3 class="producto">Camara Web</h3 class="producto">
                 </div>
                 </div>
             </div>
@@ -1424,7 +1417,7 @@
                     <p>Marca: <b>HUAWEI</b></p>
                     <br /><br />
                     <p class="precio"><b>Precio $3500</b></p><br>
-                    <h3>Camara Web</h3>
+                    <h3 class="producto">Camara Web</h3 class="producto">
                 </div>
                 </div>
             </div>
@@ -1442,7 +1435,7 @@
                     <p>Marca: <b>HUAWEI</b></p>
                     <br /><br />
                     <p class="precio"><b>Precio $3500</b></p><br>
-                    <h3>Camara Web</h3>
+                    <h3 class="producto">Camara Web</h3 class="producto">
                 </div>
                 </div>
             </div>
@@ -1460,7 +1453,7 @@
                     <p>Marca: <b>HUAWEI</b></p>
                     <br /><br />
                     <p class="precio"><b>Precio $3500</b></p><br>
-                    <h3>Camara Web</h3>
+                    <h3 class="producto">Camara Web</h3 class="producto">
                 </div>
                 </div>
             </div>
@@ -1478,7 +1471,7 @@
                     <p>Marca: <b>HUAWEI</b></p>
                     <br /><br />
                     <p class="precio"><b>Precio $3500</b></p><br>
-                    <h3>Camara Web</h3>
+                    <h3 class="producto">Camara Web</h3 class="producto">
                 </div>
                 </div>
             </div>

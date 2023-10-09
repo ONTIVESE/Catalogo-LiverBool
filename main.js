@@ -1,6 +1,9 @@
 // const newClass = document.querySelector('.pc-escritorio');
 // newClass.classList.add('fil');
 
+
+
+
 let pcEscritorio = document.getElementsByClassName("pc-escritorio");
 let pcPortatil = document.getElementsByClassName("pc-portatil");
 let monitores = document.getElementsByClassName("monitores");
@@ -14,6 +17,22 @@ let procesador = document.getElementsByClassName("procesador");
 let discoDuroExterno = document.getElementsByClassName("disco-duro-externo");
 let discoSsd = document.getElementsByClassName("disco-ssd");
 let camaraWeb = document.getElementsByClassName("camara-web");
+
+
+function buscar(){
+
+    document.addEventListener("keyup", (e) => {
+        if (e.target.matches(".buscar")) {
+            document.querySelectorAll(".target").forEach((producto) => {
+                producto.textContent.toLocaleLowerCase().includes(e.target.value)
+                    ? producto.classList.remove("filter")
+                    : producto.classList.add("filter");
+            });
+        }
+        console.log(e.target.value);
+    });
+}
+
 
 function todosF() {
     for (let i = 0; i < pcEscritorio.length; i++)
